@@ -1,5 +1,7 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import ProjectTag from '../ProjectTag/ProjectTag';
 
 
 const projectData = [
@@ -36,7 +38,7 @@ const projectData = [
         title: 'Full-Stack Roadmap',
         description:'Project 1 description',
         image:'/projectImg/5.png',
-        tag: ['All', 'Web']
+        tag: ['All', 'Mobile']
     },
     {
         id: 6,
@@ -48,12 +50,25 @@ const projectData = [
 ]
 
 const ProjectSection = () => {
+    const [tag, setTag]= useState("All");
+    const handleTagChange = (newTag) =>{
+        setTag(newTag);
+    }
+
+    const filerProjects = projectData.filter((project)=> project.tag.includes(tag))
+
     return (
         <div>
-            <h2>Projects</h2>
-            <div>
+            <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8'>Projects</h2>
+            <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+                
+               <ProjectTag onClick={handleTagChange} name= "All" isSelected={tag === "All"}></ProjectTag>
+               <ProjectTag onClick={handleTagChange} name= "Web" isSelected={tag === "Web"}></ProjectTag>
+               <ProjectTag onClick={handleTagChange} name= "Mobile" isSelected={tag === "Mobile"}></ProjectTag>
+            </div>
+            <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
                 {
-                    projectData.map(project=><ProjectCard
+                    filerProjects.map(project=><ProjectCard
                     key={project.id}
                     project={project}></ProjectCard>)
                 }
