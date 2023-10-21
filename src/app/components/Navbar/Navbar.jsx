@@ -24,7 +24,7 @@ const Navbar = () => {
     return (
         <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
             <div className='flex flex-wrap items-center justify-between mx-auto px-36 py-4'>
-                <Link href='/' className='text-4xl text-white font-semibold'><img className='w-48' src="/image/alavy-logo.png" alt="" /></Link>
+                <Link href='/' className='text-4xl text-white font-semibold'><img className='w-16 h-16' src="/image/alavy-2.png" alt="" /></Link>
                 <div className=' mobile-menu block md:hidden'>
                     {
                         !navbarOpen?(

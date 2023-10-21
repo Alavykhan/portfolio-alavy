@@ -75,6 +75,6 @@ const ProjectSection = () => {
             </div>
         </div>
     );
-};
+}; 
 
 export default ProjectSection;
