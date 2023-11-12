@@ -58,13 +58,13 @@ const EmailSection = () => {
               ) : (
 
                 <form className='flex flex-col'onSubmit={handleSubmit}>
-                <label htmlFor='email' name='email' className='text-white block text-sm font-medium mb-2'>Your email</label>
-                <input className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full mb-6 p-2.5' type="email" id='email' placeholder='Your Email' required />
+                <label htmlFor='email'  className='text-white block text-sm font-medium mb-2'>Your email</label>
+                <input className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full mb-6 p-2.5' type="email" name='email' id='email' placeholder='Your Email' required />
 
-                <label htmlFor='subject' name='subject' className='text-white block text-sm font-medium mb-2'>Subject</label>
-                <input className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full mb-6 p-2.5' type="text" id='subject' placeholder='Project Name' required />
+                <label htmlFor='subject'  className='text-white block text-sm font-medium mb-2'>Subject</label>
+                <input className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full mb-6 p-2.5' name='subject' type="text" id='subject' placeholder='Project Name' required />
 
-                <label htmlFor='message' name='message' className='text-white block text-sm font-medium mb-2'>Message</label>
+                <label htmlFor='message'  className='text-white block text-sm font-medium mb-2'>Message</label>
                 <textarea className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full mb-6 p-2.5' name="message" id="message" cols="20" rows="5" placeholder='Your Message'></textarea>
 
                 <button className='bg-gray-500 hover:bg-gray-600 text-white font-medium py-2.5 px-5 rounded-lg w-full ' type='submit'>Send Message</button>

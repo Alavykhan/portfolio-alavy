@@ -7,8 +7,8 @@ const fromEmail =process.env.FROM_EMAIL;
 
 
 export async function POST(req, res) {
-  const {body} = await req.json();
-  const {email, subject, message} = body;
+  const {email, subject, message} = await req.json();
+  console.log(email, subject, message)
   try {
     const data = await resend.emails.send({
       from: fromEmail,

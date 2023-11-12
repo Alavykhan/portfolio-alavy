@@ -39,7 +39,7 @@ const HeroSection = () => {
                     </h1>
                     <p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>I'm a passionate and creative Frontend Developer with a knack for turning design concepts into seamless, interactive web experiences.</p>
                     <div>
-                    <Link href='https://www.upwork.com/freelancers/~01ce5a15fac94d482a' target='blank'><button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 text-white bg-gradient-to-br from-white to-gray-300 text-black font-semibold hover:bg-slate-200'>Hire Me</button></Link>
+                    <Link href='https://www.upwork.com/freelancers/~01ce5a15fac94d482a' target='blank'><button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 text-black bg-gradient-to-br from-white to-gray-300 text-black font-semibold hover:bg-slate-200'>Hire Me</button></Link>
                         
                         <button onClick={()=>{downloadFile(pdf)}} className='px-1 py-1 w-full sm:w-fit rounded-full  bg-gradient-to-br from-white to-gray-300 hover:bg-slate-800 text-white mt-3'><span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span></button>
                     </div>

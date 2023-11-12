@@ -34,8 +34,8 @@ const TabData=[
         id:'experience',
         content: (
             <ul className='list-disc pl-2'>
-                <li>Doing freelance job from from January 2023 onwards</li>
-                <li>Worked as a communication manager in an advertising agency, from 2017-2022</li>
+                <li>Doing freelance job from from January 2022 onwards</li>
+                <li>Worked as a communication manager in an advertising agency, from 2017-2021</li>
             </ul>
         )
     }, 
